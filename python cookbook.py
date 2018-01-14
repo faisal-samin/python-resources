@@ -90,10 +90,21 @@ while condition:
 for var in seq:
     expression
 
+# Iterating over rows
 # using multiple parameters using enumerate on the list
 heights = [1.73, 1.6, 1.82, 1.92]
 for index, height in enumerate(heights): # enumerate produces the index
     print(index,height)
+# dictionary
+for key, val in my_dict.items() # strictly nameed
+# Numpy array
+for val in np.nditer(my_array) # for 1D arrays, you can just for val in my_array
+
+# for pd.dataframe, you can have to use iterrows, this gives label and entire
+# series for a row
+for lab, car in cars.iterrows(): # iterrrows() is also a panda series
+    print(lab) # prints out row label
+    print(car) # prints out entire series
 
 
 '''
@@ -205,3 +216,9 @@ df.iloc[[3,4],0] # print out 4th and 5th row, and first column
 df.iloc[[3,4],[0,1]] # 4th and 5th row, first 2 columns
 df.iloc[:,2] # all rows, 3rd column
 # all of the above are printed out as series
+
+# Craeting new columns - iteration
+# You can create new columns with a for loop and iterrows()
+# Alternatively, a quicker way is to use the .apply() method
+brics["name_length"] = brics["country"].apply(len)
+brics["name_length"] = brics["country"].apply(str.upper) # for string methods
