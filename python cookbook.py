@@ -14,7 +14,7 @@ Collection of syntax and notes for Python 3 and key modules for data science
 
 print(5/8) # In Python 3, the print statement requires bracketing
 
-help(max); ?max # help on a function
+help(max); ?max # to get some help on a function
 
 savings = 100 # Declaring variables
 result = 100 * 1.10 ** 7
