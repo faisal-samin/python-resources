@@ -14,7 +14,7 @@ Collection of syntax and notes for Python 3 and key modules for data science
 
 print(5/8) # In Python 3, the print statement requires bracketing
 
-help(max); ?max # to get help on a function
+help(max); ?max # help on a function
 
 savings = 100 # Declaring variables
 result = 100 * 1.10 ** 7
@@ -157,7 +157,7 @@ np.median(np_height)
 
 # sets the random seed, so that your results are the reproducible between simulations
 np.random.seed(123)
-np.random.rand() # print random number 
+np.random.rand() # print random number
 
 '''
 [003] - Matplotlib
