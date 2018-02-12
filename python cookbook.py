@@ -151,6 +151,13 @@ np_baseball[:,1] # entire second column
 np.mean(np_height)
 np.median(np_height)
 
+# numpy is great for simulating pseudo-random numbers
+# they are pseudo-random as they are based on a mathematical formulae and
+# can never truly be random.
+
+# sets the random seed, so that your results are the reproducible between simulations
+np.random.seed(123)
+np.random.rand() # print random number 
 
 '''
 [003] - Matplotlib
