@@ -1,2 +1,1 @@
-# python-resources
-Collection of python and panda resources, cookbooks and other useful stuff
+Collection of resources, cookbooks, cheat-sheets and other useful stuff
